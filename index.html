@@ -365,13 +365,14 @@
         <div class="container">
             <h2>Be the First to Know</h2>
             <p>Join our waitlist to get early access and special launch pricing.<br>Plus, get our free guide: "Today's Magic: 50 Moments Worth Remembering"</p>
-            <form class="email-form" onsubmit="handleSubmit(event)">
-                <input type="email" class="email-input" placeholder="Enter your email address" required>
+            <form class="email-form" action="https://gmail.us16.list-manage.com/subscribe/post?u=677578279661f16d781d69b97&amp;id=67ec9499aa&amp;f_id=00eac2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+                <input type="email" name="EMAIL" class="email-input" placeholder="Enter your email address" required>
+                <!-- Real people should not fill this in and expect good things -->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_677578279661f16d781d69b97_67ec9499aa" tabindex="-1" value="">
+                </div>
                 <button type="submit" class="submit-button">Join Waitlist</button>
             </form>
-            <div id="thank-you" style="display: none; margin-top: 20px; font-size: 1.1rem; color: #4CAF50;">
-                Thank you! We'll be in touch soon with updates and early access.
-            </div>
         </div>
     </section>
 
@@ -383,25 +384,6 @@
     </footer>
 
     <script>
-        function handleSubmit(event) {
-            event.preventDefault();
-            const form = event.target;
-            const email = form.querySelector('.email-input').value;
-            
-            // Here you would normally send the email to your backend
-            console.log('Email submitted:', email);
-            
-            // Show thank you message
-            document.getElementById('thank-you').style.display = 'block';
-            form.style.display = 'none';
-            
-            // In a real app, you'd integrate with services like:
-            // - Mailchimp
-            // - ConvertKit
-            // - Supabase
-            // - Firebase
-        }
-
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
